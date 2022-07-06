@@ -11,6 +11,7 @@ const app: Application = express();
 
 app.use(unHandledErrorMiddleware); //for all endpoints which dosen't have try catch
 app.use(cors());
+app.use(express.json());
 
 
 app.use(require("morgan")("combined"));
